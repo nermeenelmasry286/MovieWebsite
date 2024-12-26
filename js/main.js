@@ -39,16 +39,11 @@ var swiper = new Swiper(".popular-content", {
 let playButton = document.querySelector(".play-movie");
 let video = document.querySelector(".video-container");
 let myvideo = document.querySelector("#myvideo");
-let closeBtn = document.querySelector(".close-movie");
+
 
 playButton.onclick = () => {
   video.classList.add("show-video");
-  //auto play
+  // auto play
   myvideo.play();
 };
 
-closeBtn.onclick = () => {
-  video.classList.remove("show-video");
-  //pause
-  myvideo.pause();
-};
