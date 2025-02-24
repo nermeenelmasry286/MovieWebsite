@@ -218,10 +218,19 @@ header{
 }
 
 
-.movie-box-img , .m-b-i{
+/* .movie-box-img , .m-b-i{
     width: 100%;
     height: 100%;
     object-fit: cover ;
+} */
+
+
+
+.movie-box-img {
+    width: 250px; /* Set a fixed width */
+    height:450px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image is cropped properly to fit */
+    border-radius: 10px; /* Optional: Rounds corners */
 }
 
 
@@ -388,6 +397,19 @@ header{
     background: var(--main-color);
     font-size: 24px;
     animation: animate 2s linear infinite;
+}
+.show-more-btn{
+    display: inline-flex;
+    padding: 4px 20px;
+    width: fit-content;
+    background: white;
+    color: black;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+.show-more-btn:hover{
+    background: rgb(175, 163, 163);
+    transition: 0.3s all linear;
 }
 @keyframes animate{
     0%{
